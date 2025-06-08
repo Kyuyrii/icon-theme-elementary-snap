@@ -1,0 +1,28 @@
+name: icon-theme-elementary
+build-base: core24
+base: bare
+version: '8'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Elementary icon theme
+description: |
+  A Snap that allows you to use Elementary icons in Snap apps
+grade: stable
+confinement: strict
+
+slots:
+  icon-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/icons/elementary
+parts:
+  icon-themes:
+    plugin: dump
+    source: https://github.com/Kyuyrii/icon-theme-elementary/releases/download/icon-theme-elementary/elementary_os_8-icon_themes.zip
+    organize:
+      icon-themes: share/icons
+    prime:
+      - share/icons/
