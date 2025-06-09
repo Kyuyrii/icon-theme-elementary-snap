@@ -21,8 +21,8 @@ slots:
 parts:
   icon-themes:
     plugin: dump
-    source: https://github.com/Kyuyrii/icon-theme-elementary/releases/download/icon-theme-elementary/elementary_os_8-icon_themes.zip
+    source: https://github.com/Kyuyrii/icon-theme-elementary-snap/releases/download/icon-theme-elementary/elementary-icon-theme_8.1.0+r2788+pkg27.ubuntu8.1_all.deb
     organize:
-      icon-themes: share/icons
+      usr/share/icons: share/icons
     prime:
       - share/icons/
