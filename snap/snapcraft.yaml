@@ -28,14 +28,13 @@ parts:
     organize:
       usr/share/icons: share/icons
     prime:
-      - share/icons/
+      - share/icons/elementary
   elementary-xfce-icon-theme:
     plugin: dump
     source: https://github.com/Kyuyrii/icon-theme-elementary-snap/releases/download/icon-theme-elementary/elementary-xfce-icon-theme_0.21-1_all.deb
     organize:
       usr/share/icons: share/icons
     prime:
-      - share/icons/elementary
       - share/icons/elementary-xfce
       - share/icons/elementary-xfce-dark
       - share/icons/elementary-xfce-darker
