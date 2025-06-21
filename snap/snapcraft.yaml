@@ -35,4 +35,7 @@ parts:
     organize:
       usr/share/icons: share/icons
     prime:
-      - share/icons/
+      - share/icons/elementary
+      - share/icons/elementary-xfce
+      - share/icons/elementary-xfce-dark
+      - share/icons/elementary-xfce-darker
