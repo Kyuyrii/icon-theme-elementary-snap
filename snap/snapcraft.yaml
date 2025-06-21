@@ -18,10 +18,20 @@ slots:
     source:
       read:
         - $SNAP/share/icons/elementary
+        - $SNAP/share/icons/elementary-xfce
+        - $SNAP/share/icons/elementary-xfce-dark
+        - $SNAP/share/icons/elementary-xfce-darker
 parts:
-  icon-themes:
+  elementary-os-icon-theme:
     plugin: dump
     source: https://github.com/Kyuyrii/icon-theme-elementary-snap/releases/download/icon-theme-elementary/elementary-icon-theme_8.1.0+r2788+pkg27.ubuntu8.1_all.deb
+    organize:
+      usr/share/icons: share/icons
+    prime:
+      - share/icons/
+  elementary-xfce-icon-theme:
+    plugin: dump
+    source: https://github.com/Kyuyrii/icon-theme-elementary-snap/releases/download/icon-theme-elementary/elementary-xfce-icon-theme_0.21-1_all.deb
     organize:
       usr/share/icons: share/icons
     prime:
